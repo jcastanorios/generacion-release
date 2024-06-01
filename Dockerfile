@@ -1,0 +1,11 @@
+FROM hub.furycloud.io/mercadolibre/java:17-mini
+ENV SCOPE="test"
+
+ENV KEY_VALUE_STORE_SBOXQ5DLOZ5FJT_CONTAINER_NAME=sboxq5dloz5fjt__rampup_juan_castano
+ENV KEY_VALUE_STORE_SBOXQ5DLOZ5FJT_END_POINT_READ=https://sandbox01-read_kvsapi.furyapps.io
+ENV KEY_VALUE_STORE_SBOXQ5DLOZ5FJT_END_POINT_WRITE=https://sandbox01-write_kvsapi.furyapps.io
+
+ENV DOCUMENT_SEARCH_SBOXMJEEAS9WCZ_NAMESPACE=sandboxservices
+ENV DOCUMENT_SEARCH_SBOXMJEEAS9WCZ_READ_ENDPOINT=https://sandboxservices-read_dsapi.furyapps.io
+ENV DOCUMENT_SEARCH_SBOXMJEEAS9WCZ_WRITE_ENDPOINT=https://sandboxservices-write_dsapi.furyapps.io
+ENV DOCUMENT_SEARCH_SBOXMJEEAS9WCZ_ENTITY=sboxmjeeas9wcz__rampup_juan_castano

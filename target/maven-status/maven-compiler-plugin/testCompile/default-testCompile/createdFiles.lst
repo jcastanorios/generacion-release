@@ -1,0 +1,9 @@
+com/mercadolibre/rampup_juan_castano/unit/ScopeUtilsTest.class
+com/mercadolibre/rampup_juan_castano/integration/GenerateDocTest.class
+com/mercadolibre/rampup_juan_castano/integration/PingControllerTest.class
+com/mercadolibre/rampup_juan_castano/unit/beans/ManageFruitBeanTest.class
+com/mercadolibre/rampup_juan_castano/unit/beans/RandomSampleBeanTest.class
+com/mercadolibre/rampup_juan_castano/integration/IntegrationTest.class
+com/mercadolibre/rampup_juan_castano/integration/ControllerExceptionHandlerTest.class
+com/mercadolibre/rampup_juan_castano/integration/ManageFruitControllerTest.class
+com/mercadolibre/rampup_juan_castano/integration/ControllerTest.class

@@ -1,0 +1,4 @@
+name: bc-test
+description: save and search fruits documents 
+services: [fruits-kvs,fruits-kvs-ds]
+version: 1.0.0
