@@ -25,6 +25,5 @@ jobs:
           overwrite-settings: true
           job-status: 'success'
 
-      - name: Build and deploy
-        run: |
-          mvn clean package -o -C
+      - name: Build with Maven
+        run: mvn -B package -o -C --file pom.xml

@@ -6,32 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1a886579-f0e2-4432-a8bf-a314df1830a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/generate-release.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/generate-release.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-integration_test.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-local.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application-test.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mercadolibre.rampup_juan_castano.integration.ControllerExceptionHandlerTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mercadolibre.rampup_juan_castano.integration.GenerateDocTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mercadolibre.rampup_juan_castano.integration.ManageFruitControllerTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mercadolibre.rampup_juan_castano.integration.PingControllerTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mercadolibre.rampup_juan_castano.unit.ScopeUtilsTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mercadolibre.rampup_juan_castano.unit.beans.ManageFruitBeanTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mercadolibre.rampup_juan_castano.unit.beans.RandomSampleBeanTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mercadolibre/rampup_juan_castano/integration/ControllerExceptionHandlerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mercadolibre/rampup_juan_castano/integration/ControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mercadolibre/rampup_juan_castano/integration/GenerateDocTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mercadolibre/rampup_juan_castano/integration/IntegrationTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mercadolibre/rampup_juan_castano/integration/ManageFruitControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mercadolibre/rampup_juan_castano/integration/PingControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mercadolibre/rampup_juan_castano/unit/ScopeUtilsTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mercadolibre/rampup_juan_castano/unit/beans/ManageFruitBeanTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mercadolibre/rampup_juan_castano/unit/beans/RandomSampleBeanTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717254903963</updated>
       <workItem from="1717254904809" duration="815000" />
-      <workItem from="1717255774608" duration="11002000" />
+      <workItem from="1717255774608" duration="11360000" />
     </task>
     <servers />
   </component>
