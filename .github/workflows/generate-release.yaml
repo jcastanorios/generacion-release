@@ -1,4 +1,4 @@
-name: create release on pull request merge to develop
+name: create release on pull request merge to develop only
 run-name: ${{github.actor}} closed pull request
 on:
   pull_request:
