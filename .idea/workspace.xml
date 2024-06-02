@@ -42,7 +42,7 @@
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/prueba",
     "go.import.settings.migrated": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -81,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717254903963</updated>
       <workItem from="1717254904809" duration="815000" />
-      <workItem from="1717255774608" duration="9743000" />
+      <workItem from="1717255774608" duration="10037000" />
     </task>
     <servers />
   </component>
