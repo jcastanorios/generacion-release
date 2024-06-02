@@ -10,13 +10,13 @@
 	</parent>
 
 	<groupId>com.mercadolibre</groupId>
-	<artifactId>rampup-juan-castano</artifactId>
+	<artifactId>generacion-release</artifactId>
 
 	<version>last</version>
 	<packaging>jar</packaging>
 
-	<name>rampup-juan-castano</name>
-	<description>rampup-juan-castano</description>
+	<name>com.mercadolibre.spring.course</name>
+	<description>com.mercadolibre.spring.course</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
