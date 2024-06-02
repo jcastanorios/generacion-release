@@ -27,4 +27,4 @@ jobs:
 
       - name: Build and deploy
         run: |
-          mvn clean package -o
+          mvn clean package -o -C
