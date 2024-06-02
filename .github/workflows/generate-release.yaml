@@ -1,5 +1,5 @@
 name: create release on pull request merge to develop
-run-name: ${{github.actor}} closed pull request
+run-name: ${{github.actor}} cerró pull request
 on:
   pull_request:
     types: [closed]
@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.pull_request.merged && github.event.pull_request.base.ref == 'develop'
     steps:
-      - name: Checkout code
+      - name: Checkout código
         uses: actions/checkout@v4
 
-      - name: Set up JDK 17 (Corretto)
+      - name: Configurar JDK 17 (Corretto)
         uses: actions/setup-java@v3
         with:
           java-version: '17.0.7'
@@ -24,17 +24,17 @@ jobs:
           server-password: ${{ secrets.GITHUB_TOKEN }}
           overwrite-settings: true
           job-status: 'success'
+
       - name: Generar Release
         id: create_release
         uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          with:
-            tag_name: v1.0.0
-            release_name: Release v1.0.0
-            draft: false
-            prerelease: false
+        with:
+          tag_name: v1.0.0
+          release_name: Release v1.0.0
+          draft: false
+          prerelease: false
 
       - name: Obtener ID de la Release
         run: echo "La ID de la nueva release es ${{ steps.create_release.outputs.id }}"
-
