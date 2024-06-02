@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1a886579-f0e2-4432-a8bf-a314df1830a4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/generate-release.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/generate-release.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +42,7 @@
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "feature/prueba",
     "go.import.settings.migrated": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717254903963</updated>
       <workItem from="1717254904809" duration="815000" />
-      <workItem from="1717255774608" duration="9551000" />
+      <workItem from="1717255774608" duration="10037000" />
     </task>
     <servers />
   </component>

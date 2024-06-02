@@ -1,4 +1,4 @@
-name: create release on pull request merge to develop
+name: create release on pull request merge to develop only
 run-name: ${{github.actor}} closed pull request
 on:
   pull_request:
@@ -14,7 +14,7 @@ jobs:
       - name: Set up JDK 17 (Corretto)
         uses: actions/setup-java@v2
         with:
-          java-version: '17.0.7.7.1'
+          java-version: '17'
           distribution: 'adopt'
           java-package: 'jdk'
           architecture: 'x64'
@@ -28,7 +28,7 @@ jobs:
       - name: Set up Maven
         uses: actions/setup-java@v2
         with:
-          java-version: '17.0.7.7.1'
+          java-version: '17'
           distribution: 'adopt'
           java-package: 'maven'
           architecture: 'x64'
