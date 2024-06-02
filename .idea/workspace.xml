@@ -5,78 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a886579-f0e2-4432-a8bf-a314df1830a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercadolibre/spring/course/controller/UserRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mercadolibre/spring/course/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rampup-juan-castano.iml" beforeDir="false" afterPath="$PROJECT_DIR$/generacion-release.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadolibre/spring/course/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/beans/RandomSampleBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/config/ControllerExceptionHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/config/ExecutorConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/config/ManageDSConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/config/ManageKVSConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/config/ManageMetricConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/config/ObjectMapperConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/config/SpringDocConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/controller/ManageFruitController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/controller/PingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadolibre/spring/course/controller/PingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/dtos/FruitDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/dtos/FruitSearchResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/dtos/InfoFruitDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/dtos/PagingDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/dtos/SampleDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/exceptions/ApiError.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/exceptions/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/exceptions/InternalServerErrorException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/services/ManageFruitService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/util/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadolibre/spring/course/util/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/util/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadolibre/spring/course/util/Messages.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mercadolibre/rampup_juan_castano/util/ScopeUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mercadolibre/spring/course/util/ScopeUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-integration_test.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-local.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-test.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mercadolibre/rampup_juan_castano/integration/ControllerExceptionHandlerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mercadolibre/rampup_juan_castano/integration/ControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mercadolibre/rampup_juan_castano/integration/GenerateDocTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mercadolibre/rampup_juan_castano/integration/IntegrationTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mercadolibre/rampup_juan_castano/integration/ManageFruitControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mercadolibre/rampup_juan_castano/integration/PingControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mercadolibre/rampup_juan_castano/unit/ScopeUtilsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mercadolibre/rampup_juan_castano/unit/beans/ManageFruitBeanTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mercadolibre/rampup_juan_castano/unit/beans/RandomSampleBeanTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/beans/RandomSampleBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/config/ControllerExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/config/ExecutorConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/config/ManageDSConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/config/ManageKVSConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/config/ManageMetricConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/config/ObjectMapperConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/config/SpringDocConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/config/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/controller/ManageFruitController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/controller/PingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/dtos/FruitDTO$FruitDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/dtos/FruitDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/dtos/FruitSearchResult$FruitSearchResultBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/dtos/FruitSearchResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/dtos/InfoFruitDTO$InfoFruitDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/dtos/InfoFruitDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/dtos/PagingDTO$PagingDTOBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/dtos/PagingDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/dtos/SampleDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/exceptions/ApiError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/exceptions/ApiException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/exceptions/InternalServerErrorException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/services/ManageFruitService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/util/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/util/Messages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mercadolibre/rampup_juan_castano/util/ScopeUtils.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/generate-release.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1717254903963</updated>
       <workItem from="1717254904809" duration="815000" />
-      <workItem from="1717255774608" duration="5674000" />
+      <workItem from="1717255774608" duration="9255000" />
     </task>
     <servers />
   </component>
