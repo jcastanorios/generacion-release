@@ -20,9 +20,9 @@ async function createRelease(owner, repo, tagName, releaseName) {
       body: 'release notes',
     });
 
-    console.log('release created:', response.data.html_url);
+    console.log('release created: ', response.data.html_url);
   } catch (error) {
-    console.error('Error creating release:', error.message);
+    console.error('Error creating release: ', error.message);
     process.exit(1);
   }
 }
