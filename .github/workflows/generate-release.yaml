@@ -34,13 +34,10 @@ jobs:
 
       - name: Get tag of last commit
         id: get_tag_name
-        run: |
-            # Obtener todos los tags asociados con el commit HEAD
-            all_tags=$(git tag --contains HEAD)
-            # Seleccionar el tag más reciente de la lista de tags
-            last_tag=$(echo "$all_tags" | tail -n 1)
-            # Asignar el último tag a la variable de salida
-            echo "::set-output name=tag_name::$last_tag"
+        run:  |
+          last_commit_metadata=$(git log -1 --pretty=%D HEAD)
+          tag_name=$(echo "$last_commit_metadata" | sed 's/^.*tag: //' | sed 's/,.*$//' | sed 's/ //g')
+          echo "::set-output name=tag_name::$tag_name"
 
 
       - name: Get name for release
