@@ -56,14 +56,9 @@ jobs:
         id: get_repo_owner
         run: echo "::set-output name=repo_owner::$(echo ${{ github.repository }} | cut -d '/' -f1)"
 
-
-  create-release:
-    name: create-release-${{github.actor}}
-    needs: generate-release-values
-    runs-on: ubuntu-latest
-    steps:
       - name: Install dependencies
         run: npm install @octokit/rest
+
       - name: Generate release
         run: node index.js ${{ steps.get_repo_owner.outputs.repo_owner }} ${{ steps.get_repo_name.outputs.repo_name }} ${{ steps.get_tag_name.outputs.tag_name }} ${{ steps.get_release_name.outputs.release_name }}
 
