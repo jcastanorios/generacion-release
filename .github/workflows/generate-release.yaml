@@ -35,7 +35,7 @@ jobs:
 
       - name: get-name-release
         id: get_release_name
-        run: echo "::set-output name=release_name::release ${{ github.run_number }}"
+        run: echo "::set-output name=release_name::Release ${{ github.run_number }}"
 
       - name: get-owner
         id: get_repo_owner
@@ -45,4 +45,4 @@ jobs:
         run: npm install @octokit/rest
 
       - name: generate-release
-        run: node index.js juMNUhS6PAQkvRyy9dueFmGUjgjW2JCGtI3aaqaITXNTXAYGxLQDUPiZ ${{ steps.get_repo_owner.outputs.repo_owner }} ${{ steps.get_repo_name.outputs.repo_name }} 3.0.0 ${{ steps.get_release_name.outputs.release_name }}
+        run: node index.js ${{ secrets.TOKEN_RELEASE }} ${{ steps.get_repo_owner.outputs.repo_owner }} ${{ steps.get_repo_name.outputs.repo_name }} ${{ steps.get_tag_name.outputs.tag_name }} ${{ steps.get_release_name.outputs.release_name }}
