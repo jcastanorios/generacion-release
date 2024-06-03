@@ -48,4 +48,4 @@ jobs:
         run: npm install @octokit/rest
 
       - name: generate-release
-        run: node index.js ${{ secrets.TOKEN_RELEASE }} ${{ steps.get_repo_owner.outputs.repo_owner }} ${{ steps.get_repo_name.outputs.repo_name }} 0.0.3 ${{ steps.get_release_name.outputs.release_name }}
+        run: node index.js ${{ steps.get_repo_owner.outputs.repo_owner }} ${{ steps.get_repo_name.outputs.repo_name }} 0.0.3 ${{ steps.get_release_name.outputs.release_name }}
