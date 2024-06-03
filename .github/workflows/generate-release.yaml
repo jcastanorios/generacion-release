@@ -34,7 +34,8 @@ jobs:
 
       - name: Get tag of last commit
         id: get_tag_name
-        run: echo "::set-output name=tag_name::$(git tag --points-at HEAD)"
+        run: echo "::set-output name=tag_name::$(git describe --tags --abbrev=0 HEAD)"
+
 
       - name: Get name for release
         id: get_release_name
