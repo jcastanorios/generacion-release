@@ -17,17 +17,17 @@ async function createRelease(owner, repo, tagName, releaseName) {
       repo,
       tag_name: tagName,
       name: releaseName,
-      body: 'Release notes',
+      body: 'release notes',
     });
 
-    console.log('Release created:', response.data.html_url);
+    console.log('release created:', response.data.html_url);
   } catch (error) {
     console.error('Error creating release:', error.message);
     process.exit(1);
   }
 }
 
-const args = process.argv.slice(2);
+const args= process.argv.slice(2);
 
 if (args.length !== 4) {
   console.error('Error: You must provide the repository owner, repository name, tag name, and release name.');
