@@ -1,5 +1,5 @@
 name: create release on pull request merge to develop
-run-name: ${{github.actor}} cerró pull request
+run-name: ${{github.actor}} closed pull request
 on:
   pull_request:
     types: [closed]
