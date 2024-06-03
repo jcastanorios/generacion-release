@@ -41,5 +41,8 @@ jobs:
         id: get_repo_owner
         run: echo "::set-output name=repo_owner::$(echo ${{ github.repository }} | cut -d '/' -f1)"
 
+      - name: Instalar dependencias
+        run: npm install @octokit/rest
+
       - name: generate-release
         run: node index.js ${{ secrets.GITHUB_TOKEN }} ${{ steps.get_repo_owner.outputs.repo_owner }} ${{ steps.get_repo_name.outputs.repo_name }} ${{ steps.get_tag_name.outputs.tag_name }} ${{ steps.get_release_name.outputs.release_name }}
