@@ -1,22 +1,25 @@
-name: create release on pull request merge to develop
-run-name: ${{github.actor}} closed pull request
+name: Create release on pull request merge to develop
+
 on:
   pull_request:
     types: [closed]
+
 jobs:
   create_release:
+    name: ${{github.actor}} closed pull request
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     permissions:
       contents: read
       issues: write
+      pull-requests: write
     if: github.event.pull_request.merged && github.event.pull_request.base.ref == 'develop'
     steps:
-      - name: code-checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: config-JDK-17 (Corretto)
+      - name: Configure JDK 17 (Corretto)
         uses: actions/setup-java@v3
         with:
           java-version: '17.0.7'
@@ -24,30 +27,25 @@ jobs:
           java-package: 'jdk'
           architecture: 'x64'
           check-latest: false
-          server-id: 'github'
-          server-username: ${{ github.actor }}
-          server-password: ${{ secrets.GITHUB_TOKEN }}
-          overwrite-settings: true
-          job-status: 'success'
 
-      - name: get-repository-name
+      - name: Get repository name
         id: get_repo_name
         run: echo "::set-output name=repo_name::$(basename $(pwd))"
 
-      - name: get-tag-last-commit
+      - name: Get tag of last commit
         id: get_tag_name
         run: echo "::set-output name=tag_name::$(git describe --tags --abbrev=0)"
 
-      - name: get-name-release
+      - name: Get name for release
         id: get_release_name
         run: echo "::set-output name=release_name::release${{ github.run_number }}"
 
-      - name: get-owner
+      - name: Get repository owner
         id: get_repo_owner
         run: echo "::set-output name=repo_owner::$(echo ${{ github.repository }} | cut -d '/' -f1)"
 
-      - name: Instalar dependencias
+      - name: Install dependencies
         run: npm install @octokit/rest
 
-      - name: generate-release
-        run: node index.js ${{ steps.get_repo_owner.outputs.repo_owner }} ${{ steps.get_repo_name.outputs.repo_name }} 0.0.3 ${{ steps.get_release_name.outputs.release_name }}
+      - name: Generate release
+        run: node index.js ${{ steps.get_repo_owner.outputs.repo_owner }} ${{ steps.get_repo_name.outputs.repo_name }} ${{ steps.get_tag_name.outputs.tag_name }} ${{ steps.get_release_name.outputs.release_name }}
