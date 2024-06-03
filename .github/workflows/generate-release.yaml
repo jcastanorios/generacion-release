@@ -6,6 +6,9 @@ on:
 jobs:
   create_release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
     if: github.event.pull_request.merged && github.event.pull_request.base.ref == 'develop'
     steps:
       - name: code-checkout
