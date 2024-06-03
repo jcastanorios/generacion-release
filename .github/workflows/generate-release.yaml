@@ -11,9 +11,9 @@ jobs:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     permissions:
-      contents: read
-      issues: write
-      pull-requests: write
+        contents: write
+        pull-requests: write
+        repository-projects: write
     if: github.event.pull_request.merged && github.event.pull_request.base.ref == 'develop'
     steps:
       - name: Checkout code
