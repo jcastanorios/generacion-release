@@ -43,8 +43,7 @@ jobs:
       - name: Get tag of last commit
         id: get_tag_name
         run: |
-          last_commit_metadata=$(git log -1 --pretty=%D HEAD)
-          tag_name=$(echo "$last_commit_metadata" | sed 's/^.*tag: //' | sed 's/,.*$//' | sed 's/ //g')
+          tag_name=${{ github.run_number }}
           echo "::set-output name=tag_name::$tag_name"
 
 
