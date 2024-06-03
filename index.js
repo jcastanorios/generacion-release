@@ -1,7 +1,14 @@
 #!/usr/bin/env node
 const { Octokit } = require('@octokit/rest');
 
-async function createRelease(token, owner, repo, tagName, releaseName) {
+async function createRelease(owner, repo, tagName, releaseName) {
+  const token = process.env.GITHUB_TOKEN;
+
+  if (!token) {
+    console.error('Error: You must provide an authentication token in the GITHUB_TOKEN environment variable.');
+    process.exit(1);
+  }
+
   const octokit = new Octokit({ auth: token });
 
   try {
@@ -10,20 +17,20 @@ async function createRelease(token, owner, repo, tagName, releaseName) {
       repo,
       tag_name: tagName,
       name: releaseName,
-      body: 'Notas de la versión',
+      body: 'Release notes',
     });
 
-    console.log('Release creado:', response.data.html_url);
+    console.log('Release created:', response.data.html_url);
   } catch (error) {
-    console.error('Error al crear el release:', error.message);
+    console.error('Error creating release:', error.message);
     process.exit(1);
   }
 }
 
 const args = process.argv.slice(2);
 
-if (args.length !== 5) {
-  console.error('Error: Debes proporcionar el token, propietario del repositorio, nombre del repositorio, nombre de la etiqueta y nombre del release.');
+if (args.length !== 4) {
+  console.error('Error: You must provide the repository owner, repository name, tag name, and release name.');
   process.exit(1);
 }
 
